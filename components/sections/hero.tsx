@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { useEffect, useState } from "react"
+import { useEffect, useState, useMemo } from "react"
 
 export function Hero() {
   const titleText = "Sincroniza tu biologia con tu agenda"
@@ -43,9 +43,29 @@ export function Hero() {
 
   return (
     <section className="min-h-screen flex flex-col justify-center pt-20 relative overflow-hidden">
-      {/* Decorative orb */}
-      <div className="absolute -right-32 md:-right-48 top-32 md:top-40 w-[500px] h-[500px] md:w-[750px] md:h-[750px] pointer-events-none animate-orb-rotate -z-10 scale-125 opacity-40">
-        <Image src="/images/orb.png" alt="" width={750} height={750} className="w-full h-full" style={{ filter: "hue-rotate(100deg) saturate(1.4)" }} priority />
+      {/* Flow Aura — pure CSS */}
+      <div className="absolute -right-32 md:-right-48 top-32 md:top-40 w-[500px] h-[500px] md:w-[750px] md:h-[750px] pointer-events-none animate-aura-rotate -z-10">
+        {/* Primary aura layer */}
+        <div
+          className="absolute inset-0 rounded-full opacity-30 blur-[120px]"
+          style={{
+            background: "conic-gradient(from 0deg, #0F2E2F 0%, transparent 15%, #1a4a3a 30%, transparent 45%, #0F2E2F 60%, transparent 75%, #1a4a3a 90%, #0F2E2F 100%)",
+          }}
+        />
+        {/* Secondary glow layer */}
+        <div
+          className="absolute inset-[15%] rounded-full opacity-40 blur-[100px]"
+          style={{
+            background: "radial-gradient(circle, rgba(15,46,47,0.5) 0%, rgba(26,74,58,0.3) 40%, transparent 70%)",
+          }}
+        />
+        {/* Inner bright core */}
+        <div
+          className="absolute inset-[30%] rounded-full opacity-25 blur-[80px]"
+          style={{
+            background: "radial-gradient(circle, rgba(57,192,78,0.15) 0%, rgba(15,46,47,0.2) 50%, transparent 80%)",
+          }}
+        />
       </div>
 
       <div className="max-w-[1280px] mx-auto px-6 md:px-12 py-20 md:py-32 md:pb-4 pb-4 pt-4 md:pt-32">
