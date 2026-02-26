@@ -89,16 +89,16 @@ export function Hero() {
                 type="submit"
                 className="px-8 py-4 text-base font-medium text-white rounded-full transition-all whitespace-nowrap"
                 style={{
-                  backgroundColor: "#0d241b",
-                  boxShadow: "0 4px 20px rgba(13, 36, 27, 0.35)",
+                  backgroundColor: "#0F2E2F",
+                  boxShadow: "0 4px 20px rgba(15, 46, 47, 0.35)",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.boxShadow = "0 8px 30px rgba(13, 36, 27, 0.55)"
-                  e.currentTarget.style.backgroundColor = "#091a13"
+                  e.currentTarget.style.boxShadow = "0 8px 30px rgba(15, 46, 47, 0.55)"
+                  e.currentTarget.style.backgroundColor = "#0a2122"
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.boxShadow = "0 4px 20px rgba(13, 36, 27, 0.35)"
-                  e.currentTarget.style.backgroundColor = "#0d241b"
+                  e.currentTarget.style.boxShadow = "0 4px 20px rgba(15, 46, 47, 0.35)"
+                  e.currentTarget.style.backgroundColor = "#0F2E2F"
                 }}
               >
                 Solicitar Acceso Beta
