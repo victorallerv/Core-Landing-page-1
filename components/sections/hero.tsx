@@ -63,10 +63,10 @@ export function Hero() {
           <path
             d="M 40 480 C 160 340, 340 600, 450 460 S 680 280, 860 500"
             stroke="#0F2E2F"
-            strokeWidth="3"
-            strokeDasharray="0 16"
+            strokeWidth="1.8"
+            strokeDasharray="0 8"
             strokeLinecap="round"
-            opacity="0.05"
+            opacity="0.10"
             fill="none"
             className="wave-flow-1"
           />
@@ -74,10 +74,10 @@ export function Hero() {
           <path
             d="M 60 420 C 200 540, 320 300, 440 440 S 640 580, 840 400"
             stroke="#0F2E2F"
-            strokeWidth="2.8"
-            strokeDasharray="0 18"
+            strokeWidth="1.6"
+            strokeDasharray="0 9"
             strokeLinecap="round"
-            opacity="0.08"
+            opacity="0.15"
             fill="none"
             className="wave-flow-2"
           />
@@ -85,10 +85,10 @@ export function Hero() {
           <path
             d="M 80 380 C 180 260, 360 540, 460 360 S 660 200, 820 420"
             stroke="#0F2E2F"
-            strokeWidth="3"
-            strokeDasharray="0 15"
+            strokeWidth="1.8"
+            strokeDasharray="0 7"
             strokeLinecap="round"
-            opacity="0.12"
+            opacity="0.20"
             fill="none"
             className="wave-flow-3"
           />
@@ -96,10 +96,10 @@ export function Hero() {
           <path
             d="M 50 450 C 200 320, 300 580, 420 420 S 600 260, 850 470"
             stroke="#0F2E2F"
-            strokeWidth="3.2"
-            strokeDasharray="0 14"
+            strokeWidth="2"
+            strokeDasharray="0 7"
             strokeLinecap="round"
-            opacity="0.20"
+            opacity="0.35"
             fill="none"
             className="wave-flow-4"
           />
@@ -107,10 +107,10 @@ export function Hero() {
           <path
             d="M 100 340 C 240 460, 380 220, 500 360 S 680 500, 800 320"
             stroke="#0F2E2F"
-            strokeWidth="2.5"
-            strokeDasharray="0 18"
+            strokeWidth="1.5"
+            strokeDasharray="0 8"
             strokeLinecap="round"
-            opacity="0.25"
+            opacity="0.28"
             fill="none"
             className="wave-flow-5"
           />
@@ -118,10 +118,10 @@ export function Hero() {
           <path
             d="M 70 520 C 220 400, 350 620, 480 490 S 650 340, 830 540"
             stroke="#0F2E2F"
-            strokeWidth="2.5"
-            strokeDasharray="0 20"
+            strokeWidth="1.5"
+            strokeDasharray="0 9"
             strokeLinecap="round"
-            opacity="0.15"
+            opacity="0.22"
             fill="none"
             className="wave-flow-6"
           />
@@ -129,10 +129,10 @@ export function Hero() {
           <path
             d="M 120 300 C 260 440, 400 200, 520 340 S 700 480, 780 290"
             stroke="#0F2E2F"
-            strokeWidth="2"
-            strokeDasharray="0 22"
+            strokeWidth="1.3"
+            strokeDasharray="0 10"
             strokeLinecap="round"
-            opacity="0.10"
+            opacity="0.12"
             fill="none"
             className="wave-flow-7"
           />
