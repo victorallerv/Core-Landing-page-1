@@ -6,17 +6,17 @@ import { Zap, ShieldCheck, Moon } from "lucide-react"
 const benefits = [
   {
     title: "Flow bajo demanda",
-    description: "Elimina la niebla mental en 20 minutos.",
+    description: "Entra en estado de maxima concentracion cuando tu agenda lo exija, con nootropicos de grado clinico y sin estimulantes agresivos.",
     icon: Zap,
   },
   {
-    title: "Cero Ansiedad",
-    description: "Energia estable sin los bajones del cafe.",
+    title: "Calma Estrategica",
+    description: "Energia limpia y sostenida. Adios a los picos de cortisol, la ansiedad del cafe y los bajones de la tarde.",
     icon: ShieldCheck,
   },
   {
     title: "Recuperacion Profunda",
-    description: "Optimiza tu cortisol para un descanso real.",
+    description: "Formulas adaptogenicas que apagan el ruido mental y preparan tu sistema nervioso para un descanso real y reparador.",
     icon: Moon,
   },
 ]

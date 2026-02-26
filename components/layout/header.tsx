@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils"
 const navItems = [
   { href: "#how-it-works", label: "Como Funciona", number: "01" },
   { href: "#benefits", label: "Beneficios", number: "02" },
-  { href: "#testimonials", label: "Testimonios", number: "03" },
+  { href: "#founders", label: "Fundadores", number: "03" },
 ]
 
 export function Header() {

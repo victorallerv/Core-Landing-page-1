@@ -162,7 +162,7 @@ export function Hero() {
           </h1>
 
           <p className="mt-8 max-w-xl leading-relaxed text-left text-lg text-muted-foreground ml-0">
-            Rendimiento cognitivo dinamico. CORE conecta tus datos de sueno y carga laboral para decirte exactamente que nutrientes necesita tu cerebro cada manana. Disenado para High Performers.
+            No eres una maquina, pero tu cerebro necesita un sistema operativo. CORE cruza tus biomarcadores de sueno con tu calendario laboral para adaptar tu suplementacion diaria. El fin del burnout y la niebla mental.
           </p>
 
           {/* Email Capture Form */}
@@ -208,21 +208,25 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Bottom image with scroll reveal */}
-      <div className="w-full mt-8">
-        <Image
-          src="/images/designer.png"
-          alt="CORE Performance workspace"
-          width={1200}
-          height={800}
-          className="w-full h-auto transition-all duration-100 ease-out"
-          style={{
-            opacity: opacity,
-            clipPath: isDesktop ? `inset(${100 - Math.min(100, opacity * 100)}% 0 0 0)` : "none",
-            filter: "hue-rotate(100deg) saturate(0.8) brightness(1.05)",
-          }}
-          priority
-        />
+      {/* Bottom images with scroll reveal */}
+      <div
+        className="w-full mt-8 max-w-[1280px] mx-auto px-6 md:px-12 transition-all duration-300 ease-out"
+        style={{ opacity: opacity }}
+      >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="https://images.unsplash.com/photo-1615397323628-76672fc149af?q=80&w=1200&auto=format&fit=crop"
+            alt="Wellness y bienestar natural"
+            className="w-full h-64 md:h-80 object-cover rounded-2xl shadow-xl"
+          />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=1200&auto=format&fit=crop"
+            alt="Estilo de vida y tecnologia"
+            className="w-full h-64 md:h-80 object-cover rounded-2xl shadow-xl"
+          />
+        </div>
       </div>
     </section>
   )

@@ -4,7 +4,7 @@ import { Hero } from "@/components/sections/hero"
 import { HowItWorks } from "@/components/sections/how-it-works"
 import { Benefits } from "@/components/sections/benefits"
 import { ClientLogos } from "@/components/sections/client-logos"
-import { Testimonials } from "@/components/sections/testimonials"
+import { FounderPerks } from "@/components/sections/founder-perks"
 import { FinalCTA } from "@/components/sections/final-cta"
 import { GradientBar } from "@/components/ui/gradient-bar"
 
@@ -17,7 +17,7 @@ export default function HomePage() {
         <ClientLogos />
         <HowItWorks />
         <Benefits />
-        <Testimonials />
+        <FounderPerks />
         <FinalCTA />
       </main>
       <Footer />
