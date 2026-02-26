@@ -11,20 +11,20 @@
   --card-foreground: #0d241b;
   --popover: #ffffff;
   --popover-foreground: #0d241b;
-  --primary: #39C04E;
+  --primary: #0F2E2F;
   --primary-foreground: #ffffff;
   --secondary: #f0eeea;
   --secondary-foreground: #0d241b;
   --muted: #f0eeea;
   --muted-foreground: #4a6b5a;
-  --accent: #39C04E;
+  --accent: #0F2E2F;
   --accent-foreground: #ffffff;
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.577 0.245 27.325);
   --border: #e0ddd6;
   --input: #e0ddd6;
-  --ring: #39C04E;
-  --chart-1: #39C04E;
+  --ring: #0F2E2F;
+  --chart-1: #0F2E2F;
   --chart-2: #123524;
   --chart-3: #4a6b5a;
   --chart-4: #6bbf7a;
@@ -37,7 +37,7 @@
   --sidebar-accent: #f0eeea;
   --sidebar-accent-foreground: #0d241b;
   --sidebar-border: #e0ddd6;
-  --sidebar-ring: #39C04E;
+  --sidebar-ring: #0F2E2F;
 }
 
 /* Dark mode not used for CORE brand — light only */
@@ -48,32 +48,32 @@
   --card-foreground: #faf9f6;
   --popover: #123524;
   --popover-foreground: #faf9f6;
-  --primary: #39C04E;
+  --primary: #0F2E2F;
   --primary-foreground: #ffffff;
   --secondary: #1a4030;
   --secondary-foreground: #faf9f6;
   --muted: #1a4030;
   --muted-foreground: #8aaa9a;
-  --accent: #39C04E;
+  --accent: #0F2E2F;
   --accent-foreground: #ffffff;
   --destructive: oklch(0.396 0.141 25.723);
   --destructive-foreground: oklch(0.637 0.237 25.331);
   --border: #1a4030;
   --input: #1a4030;
-  --ring: #39C04E;
-  --chart-1: #39C04E;
+  --ring: #0F2E2F;
+  --chart-1: #0F2E2F;
   --chart-2: #6bbf7a;
   --chart-3: #8aaa9a;
   --chart-4: #4a6b5a;
   --chart-5: #faf9f6;
   --sidebar: #0d241b;
   --sidebar-foreground: #faf9f6;
-  --sidebar-primary: #39C04E;
+  --sidebar-primary: #0F2E2F;
   --sidebar-primary-foreground: #ffffff;
   --sidebar-accent: #1a4030;
   --sidebar-accent-foreground: #faf9f6;
   --sidebar-border: #1a4030;
-  --sidebar-ring: #39C04E;
+  --sidebar-ring: #0F2E2F;
 }
 
 @theme inline {

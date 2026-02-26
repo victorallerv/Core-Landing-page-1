@@ -49,9 +49,9 @@ export function HowItWorks() {
               {/* Step number accent */}
               <div
                 className="flex items-center justify-center w-14 h-14 rounded-2xl mb-6"
-                style={{ backgroundColor: "rgba(57, 192, 78, 0.1)" }}
+                style={{ backgroundColor: "rgba(15, 46, 47, 0.08)" }}
               >
-                <step.icon className="w-6 h-6" style={{ color: "#39C04E" }} />
+                <step.icon className="w-6 h-6" style={{ color: "#0F2E2F" }} />
               </div>
 
               <span className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-2">
@@ -70,8 +70,8 @@ export function HowItWorks() {
               <div
                 className="absolute top-0 right-0 w-16 h-16 opacity-0 group-hover:opacity-100 transition-opacity"
                 style={{
-                  borderTop: "2px solid #39C04E",
-                  borderRight: "2px solid #39C04E",
+                  borderTop: "2px solid #0F2E2F",
+                  borderRight: "2px solid #0F2E2F",
                   borderTopRightRadius: "1.5rem",
                 }}
               />

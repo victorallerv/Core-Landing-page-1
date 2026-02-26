@@ -46,9 +46,9 @@ export function Benefits() {
               >
                 <div
                   className="flex items-center justify-center w-12 h-12 rounded-xl flex-shrink-0"
-                  style={{ backgroundColor: "rgba(57, 192, 78, 0.1)" }}
+                  style={{ backgroundColor: "rgba(15, 46, 47, 0.08)" }}
                 >
-                  <benefit.icon className="w-5 h-5" style={{ color: "#39C04E" }} />
+                  <benefit.icon className="w-5 h-5" style={{ color: "#0F2E2F" }} />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-foreground mb-1">{benefit.title}</h3>

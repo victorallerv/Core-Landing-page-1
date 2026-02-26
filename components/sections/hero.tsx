@@ -83,7 +83,7 @@ export function Hero() {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Tu mejor email..."
                 required
-                className="flex-1 px-5 py-4 text-base rounded-full border border-border bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[#39C04E] transition-all"
+                className="flex-1 px-5 py-4 text-base rounded-full border border-border bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[#0F2E2F] transition-all"
               />
               <button
                 type="submit"
@@ -105,7 +105,7 @@ export function Hero() {
               </button>
             </form>
           ) : (
-            <div className="mt-10 px-6 py-4 rounded-2xl border border-[#39C04E]/30 bg-[#39C04E]/5 max-w-lg">
+            <div className="mt-10 px-6 py-4 rounded-2xl border border-[#0F2E2F]/30 bg-[#0F2E2F]/5 max-w-lg">
               <p className="text-foreground font-medium">Solicitud recibida.</p>
               <p className="text-muted-foreground text-sm mt-1">Te contactaremos pronto con los detalles del acceso beta.</p>
             </div>
