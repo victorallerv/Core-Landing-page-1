@@ -4,74 +4,76 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.03 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.03 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.03 0 0);
-  --primary: oklch(0.03 0 0);
-  --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(0.98 0 0);
-  --secondary-foreground: oklch(0.03 0 0);
-  --muted: oklch(0.98 0 0);
-  --muted-foreground: oklch(0.42 0 0);
-  --accent: oklch(0.98 0 0);
-  --accent-foreground: oklch(0.03 0 0);
+  /* CORE brand: off-white bg, dark forest green text, vibrant green accent */
+  --background: #faf9f6;
+  --foreground: #0d241b;
+  --card: #ffffff;
+  --card-foreground: #0d241b;
+  --popover: #ffffff;
+  --popover-foreground: #0d241b;
+  --primary: #39C04E;
+  --primary-foreground: #ffffff;
+  --secondary: #f0eeea;
+  --secondary-foreground: #0d241b;
+  --muted: #f0eeea;
+  --muted-foreground: #4a6b5a;
+  --accent: #39C04E;
+  --accent-foreground: #ffffff;
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.9 0 0);
-  --input: oklch(0.9 0 0);
-  --ring: oklch(0.68 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
+  --border: #e0ddd6;
+  --input: #e0ddd6;
+  --ring: #39C04E;
+  --chart-1: #39C04E;
+  --chart-2: #123524;
+  --chart-3: #4a6b5a;
+  --chart-4: #6bbf7a;
+  --chart-5: #0d241b;
   --radius: 1.25rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.03 0 0);
-  --sidebar-primary: oklch(0.03 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.03 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --sidebar: #faf9f6;
+  --sidebar-foreground: #0d241b;
+  --sidebar-primary: #0d241b;
+  --sidebar-primary-foreground: #faf9f6;
+  --sidebar-accent: #f0eeea;
+  --sidebar-accent-foreground: #0d241b;
+  --sidebar-border: #e0ddd6;
+  --sidebar-ring: #39C04E;
 }
 
+/* Dark mode not used for CORE brand — light only */
 .dark {
-  --background: oklch(0.07 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.07 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.07 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.985 0 0);
-  --primary-foreground: oklch(0.07 0 0);
-  --secondary: oklch(0.12 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.12 0 0);
-  --muted-foreground: oklch(0.68 0 0);
-  --accent: oklch(0.12 0 0);
-  --accent-foreground: oklch(0.985 0 0);
+  --background: #0d241b;
+  --foreground: #faf9f6;
+  --card: #123524;
+  --card-foreground: #faf9f6;
+  --popover: #123524;
+  --popover-foreground: #faf9f6;
+  --primary: #39C04E;
+  --primary-foreground: #ffffff;
+  --secondary: #1a4030;
+  --secondary-foreground: #faf9f6;
+  --muted: #1a4030;
+  --muted-foreground: #8aaa9a;
+  --accent: #39C04E;
+  --accent-foreground: #ffffff;
   --destructive: oklch(0.396 0.141 25.723);
   --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.22 0 0);
-  --input: oklch(0.22 0 0);
-  --ring: oklch(0.35 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.12 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.439 0 0);
+  --border: #1a4030;
+  --input: #1a4030;
+  --ring: #39C04E;
+  --chart-1: #39C04E;
+  --chart-2: #6bbf7a;
+  --chart-3: #8aaa9a;
+  --chart-4: #4a6b5a;
+  --chart-5: #faf9f6;
+  --sidebar: #0d241b;
+  --sidebar-foreground: #faf9f6;
+  --sidebar-primary: #39C04E;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #1a4030;
+  --sidebar-accent-foreground: #faf9f6;
+  --sidebar-border: #1a4030;
+  --sidebar-ring: #39C04E;
 }
 
 @theme inline {
@@ -203,11 +205,11 @@
 .analysis-word-gradient {
   background: linear-gradient(
     45deg,
-    rgba(59, 130, 246, 1) 0% /* Bleu */,
-    rgba(139, 92, 246, 1) 25% /* Violet */,
-    rgba(6, 182, 212, 1) 50% /* Cyan */,
-    rgba(245, 158, 11, 1) 75% /* Orange */,
-    rgba(59, 130, 246, 1) 100% /* Retour au bleu */
+    rgba(57, 192, 78, 1) 0%,
+    rgba(18, 53, 36, 1) 25%,
+    rgba(107, 191, 122, 1) 50%,
+    rgba(13, 36, 27, 1) 75%,
+    rgba(57, 192, 78, 1) 100%
   );
   background-size: 300% 300%;
   background-clip: text;
@@ -263,11 +265,11 @@
   0% {
     background: linear-gradient(
       45deg,
-      rgba(59, 130, 246, 1) 0%,
-      rgba(139, 92, 246, 1) 25%,
-      rgba(6, 182, 212, 1) 50%,
-      rgba(245, 158, 11, 1) 75%,
-      rgba(59, 130, 246, 1) 100%
+      rgba(57, 192, 78, 1) 0%,
+      rgba(18, 53, 36, 1) 25%,
+      rgba(107, 191, 122, 1) 50%,
+      rgba(13, 36, 27, 1) 75%,
+      rgba(57, 192, 78, 1) 100%
     );
     background-size: 300% 300%;
     background-position: 0% 50%;
@@ -275,15 +277,14 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  /* Reduced transition time - black appears at 40% instead of 50% */
   40% {
     background: linear-gradient(
       45deg,
-      rgba(59, 130, 246, 1) 0%,
-      rgba(139, 92, 246, 1) 25%,
-      rgba(6, 182, 212, 1) 50%,
-      rgba(245, 158, 11, 1) 75%,
-      rgba(59, 130, 246, 1) 100%
+      rgba(57, 192, 78, 1) 0%,
+      rgba(18, 53, 36, 1) 25%,
+      rgba(107, 191, 122, 1) 50%,
+      rgba(13, 36, 27, 1) 75%,
+      rgba(57, 192, 78, 1) 100%
     );
     background-size: 300% 300%;
     background-position: 100% 50%;
@@ -291,15 +292,14 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  /* Black color appears earlier at 50% instead of 60% */
   50% {
-    background: oklch(0.03 0 0);
+    background: #0d241b;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   100% {
-    background: oklch(0.03 0 0);
+    background: #0d241b;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -320,7 +320,7 @@
     animation: none;
     filter: none;
     opacity: 1;
-    background: oklch(0.03 0 0);
+    background: #0d241b;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -345,11 +345,11 @@
   0% {
     background: linear-gradient(
       45deg,
-      rgba(59, 130, 246, 1) 0%,
-      rgba(139, 92, 246, 1) 25%,
-      rgba(6, 182, 212, 1) 50%,
-      rgba(245, 158, 11, 1) 75%,
-      rgba(59, 130, 246, 1) 100%
+      rgba(57, 192, 78, 1) 0%,
+      rgba(18, 53, 36, 1) 25%,
+      rgba(107, 191, 122, 1) 50%,
+      rgba(13, 36, 27, 1) 75%,
+      rgba(57, 192, 78, 1) 100%
     );
     background-size: 300% 300%;
     background-position: 0% 50%;
@@ -360,11 +360,11 @@
   40% {
     background: linear-gradient(
       45deg,
-      rgba(59, 130, 246, 1) 0%,
-      rgba(139, 92, 246, 1) 25%,
-      rgba(6, 182, 212, 1) 50%,
-      rgba(245, 158, 11, 1) 75%,
-      rgba(59, 130, 246, 1) 100%
+      rgba(57, 192, 78, 1) 0%,
+      rgba(18, 53, 36, 1) 25%,
+      rgba(107, 191, 122, 1) 50%,
+      rgba(13, 36, 27, 1) 75%,
+      rgba(57, 192, 78, 1) 100%
     );
     background-size: 300% 300%;
     background-position: 100% 50%;
@@ -372,15 +372,14 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  /* Black color appears earlier at 50% instead of 60% */
   50% {
-    background: oklch(0.03 0 0);
+    background: #0d241b;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   100% {
-    background: oklch(0.03 0 0);
+    background: #0d241b;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -402,7 +401,7 @@
     filter: none;
     opacity: 1;
     transform: none;
-    background: oklch(0.03 0 0);
+    background: #0d241b;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -419,11 +418,11 @@
   height: 1px; /* Reduced from 2px to 1px for even thinner gradient */
   background: linear-gradient(
     90deg,
-    rgba(236, 72, 153, 0.8) 0% /* Rose/Pink */,
-    rgba(139, 92, 246, 0.8) 25% /* Violet */,
-    rgba(59, 130, 246, 0.8) 50% /* Bleu */,
-    rgba(6, 182, 212, 0.8) 75% /* Cyan */,
-    rgba(236, 72, 153, 0.8) 100% /* Retour au Rose */
+    rgba(57, 192, 78, 0.8) 0%,
+    rgba(107, 191, 122, 0.8) 25%,
+    rgba(18, 53, 36, 0.8) 50%,
+    rgba(57, 192, 78, 0.8) 75%,
+    rgba(107, 191, 122, 0.8) 100%
   );
   background-size: 200% 100%;
   filter: blur(4px); /* Reduced blur from 20px to 4px for thinner gradient */

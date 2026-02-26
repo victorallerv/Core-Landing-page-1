@@ -7,7 +7,7 @@ export function GradientBar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const selectedWorksSection = document.querySelector("#works")
+      const selectedWorksSection = document.querySelector("#how-it-works")
       if (selectedWorksSection) {
         const rect = selectedWorksSection.getBoundingClientRect()
         // Show gradient when Selected Works section is in viewport

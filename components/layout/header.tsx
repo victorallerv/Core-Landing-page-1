@@ -8,11 +8,9 @@ import { Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const navItems = [
-  { href: "#works", label: "Selected work", number: "01" },
-  { href: "#about", label: "About", number: "02" },
-  { href: "#testimonials", label: "What clients say", number: "03" },
-  { href: "#awards", label: "Awards & Recognition", number: "04" },
-  { href: "#insights", label: "Insights", number: "05" },
+  { href: "#how-it-works", label: "Como Funciona", number: "01" },
+  { href: "#benefits", label: "Beneficios", number: "02" },
+  { href: "#testimonials", label: "Testimonios", number: "03" },
 ]
 
 export function Header() {
@@ -31,7 +29,7 @@ export function Header() {
     e.preventDefault()
     const element = document.querySelector(href)
     if (element) {
-      const headerOffset = 80 // Height of fixed header
+      const headerOffset = 80
       const elementPosition = element.getBoundingClientRect().top
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset
 
@@ -60,9 +58,9 @@ export function Header() {
                 e.preventDefault()
                 window.scrollTo({ top: 0, behavior: "smooth" })
               }}
-              className="text-lg font-semibold tracking-tight"
+              className="text-xl font-semibold tracking-tight text-foreground"
             >
-              portfolio
+              CORE
             </Link>
 
             {/* Desktop Navigation */}
@@ -84,21 +82,20 @@ export function Header() {
             <div className="hidden md:block">
               <Link
                 href="#contact"
-                className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium rounded-full text-white transition-all hover:shadow-xl relative overflow-hidden group"
+                onClick={(e) => handleNavClick(e, "#contact")}
+                className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium rounded-full text-white transition-all hover:shadow-xl"
                 style={{
-                  background: "linear-gradient(135deg, #203eec 0%, #00d4ff 100%)",
-                  boxShadow: "0 4px 20px rgba(32, 62, 236, 0.3)",
+                  backgroundColor: "#39C04E",
+                  boxShadow: "0 4px 20px rgba(57, 192, 78, 0.3)",
                 }}
               >
-                <span className="relative z-10">Let's Talk</span>
-                {/* Glow effect on hover */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl bg-gradient-to-r from-[#203eec] to-[#00d4ff]" />
+                Solicitar Acceso
               </Link>
             </div>
 
             {/* Mobile Menu Button */}
-            <button onClick={() => setIsMobileMenuOpen(true)} className="md:hidden p-2 -mr-2" aria-label="Open menu">
-              <Menu className="w-5 h-5" />
+            <button onClick={() => setIsMobileMenuOpen(true)} className="md:hidden p-2 -mr-2" aria-label="Abrir menu">
+              <Menu className="w-5 h-5 text-foreground" />
             </button>
           </nav>
         </div>
@@ -109,11 +106,11 @@ export function Header() {
         <div className="fixed inset-0 z-50 bg-background md:hidden">
           <div className="flex flex-col h-full p-6">
             <div className="flex items-center justify-between">
-              <Link href="/" className="text-lg font-semibold tracking-tight">
-                portfolio
+              <Link href="/" className="text-xl font-semibold tracking-tight text-foreground">
+                CORE
               </Link>
-              <button onClick={() => setIsMobileMenuOpen(false)} className="p-2 -mr-2" aria-label="Close menu">
-                <X className="w-5 h-5" />
+              <button onClick={() => setIsMobileMenuOpen(false)} className="p-2 -mr-2" aria-label="Cerrar menu">
+                <X className="w-5 h-5 text-foreground" />
               </button>
             </div>
             <nav className="flex flex-col gap-6 mt-12">
@@ -122,7 +119,7 @@ export function Header() {
                   key={item.href}
                   href={item.href}
                   onClick={(e) => handleNavClick(e, item.href)}
-                  className="text-3xl font-semibold hover:text-muted-foreground transition-colors"
+                  className="text-3xl font-semibold hover:text-muted-foreground transition-colors text-foreground"
                 >
                   {item.label}
                 </Link>
@@ -131,16 +128,17 @@ export function Header() {
             <div className="mt-auto">
               <Link
                 href="#contact"
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium rounded-full text-white transition-all hover:shadow-xl relative overflow-hidden group"
+                onClick={(e) => {
+                  handleNavClick(e, "#contact")
+                  setIsMobileMenuOpen(false)
+                }}
+                className="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium rounded-full text-white transition-all hover:shadow-xl"
                 style={{
-                  background: "linear-gradient(135deg, #203eec 0%, #00d4ff 100%)",
-                  boxShadow: "0 4px 20px rgba(32, 62, 236, 0.3)",
+                  backgroundColor: "#39C04E",
+                  boxShadow: "0 4px 20px rgba(57, 192, 78, 0.3)",
                 }}
               >
-                <span className="relative z-10">Let's Talk</span>
-                {/* Glow effect on hover */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl bg-gradient-to-r from-[#203eec] to-[#00d4ff]" />
+                Solicitar Acceso
               </Link>
             </div>
           </div>

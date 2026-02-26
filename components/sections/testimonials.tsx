@@ -8,72 +8,65 @@ const testimonials = [
   {
     id: 1,
     quote:
-      "Their AI design expertise transformed our product. The vibe coding approach allowed us to iterate rapidly and ship features 3x faster than traditional methods.",
-    author: "Sarah Chen",
-    role: "CEO at AI Startup",
+      "Desde que uso CORE, mi enfoque en las mananas es brutal. Paso de reuniones de 4 horas sin perder claridad mental. Es otro nivel.",
+    author: "Carlos Mendez",
+    role: "CEO, Fintech Startup",
     avatar: "/images/imgi_97_user77.webp",
-    company: "Neural Labs",
-    blurColor: "bg-blue-500",
+    blurColor: "bg-emerald-500",
   },
   {
     id: 2,
     quote:
-      "Incredible work integrating GPT-4 into our interface. They understand both the technical AI capabilities and how to make them feel natural to users.",
-    author: "Marcus Johnson",
-    role: "Product Lead at OpenAI Partner",
+      "La app sabe exactamente como he dormido y ajusta mi dosis. Es como tener un nutricionista y un coach de rendimiento en el bolsillo.",
+    author: "Laura Herrera",
+    role: "Directora de Producto, SaaS",
     avatar: "/images/imgi_106_user86.webp",
-    company: "Synthetics",
-    blurColor: "bg-purple-500",
+    blurColor: "bg-emerald-600",
   },
   {
     id: 3,
     quote:
-      "The prompt engineering skills are world-class. They built our entire design system using AI tools and it's production-ready and beautiful.",
-    author: "Emily Rodriguez",
-    role: "Founder at AI Design Tool",
+      "Deje el cafe y no miro atras. La energia que me da Flow es limpia, constante y sin crashes. CORE es el futuro de la suplementacion.",
+    author: "Andres Vega",
+    role: "Fundador, Agencia Digital",
     avatar: "/images/imgi_105_user85.webp",
-    company: "DesignAI",
-    blurColor: "bg-pink-500",
+    blurColor: "bg-green-500",
   },
   {
     id: 4,
     quote:
-      "Working with an AI-native designer was eye-opening. They leveraged Midjourney and v0 to create concepts we never would have imagined.",
-    author: "David Park",
-    role: "CTO at ML Platform",
+      "Restore cambio mi sueno por completo. Me despierto descansada de verdad. Si eres high performer, necesitas esto.",
+    author: "Sofia Torres",
+    role: "VP de Estrategia, Consultora",
     avatar: "/images/imgi_102_user82.webp",
-    company: "Tensor",
-    blurColor: "bg-emerald-500",
+    blurColor: "bg-emerald-400",
   },
   {
     id: 5,
     quote:
-      "Their mastery of generative design tools allowed us to explore 100+ variations in days, not months. Game-changing for our design process.",
-    author: "Lisa Wang",
-    role: "VP Design at Enterprise AI",
+      "Balance me ha ayudado a manejar el estres de levantar una ronda. Es ciencia real, no marketing de humo.",
+    author: "Diego Ramirez",
+    role: "CTO, HealthTech",
     avatar: "/images/imgi_100_user80.webp",
-    company: "Cognition",
-    blurColor: "bg-orange-500",
+    blurColor: "bg-green-600",
   },
   {
     id: 6,
     quote:
-      "They don't just use AI tools—they think in AI. The conversational interfaces they designed feel genuinely intelligent and human.",
-    author: "James Mitchell",
-    role: "Director at Voice AI",
+      "La integracion con Apple Watch es genial. CORE sabe que dias necesito mas apoyo cognitivo y ajusta automaticamente.",
+    author: "Maria Elena Cruz",
+    role: "Directora Medica, Biotech",
     avatar: "/images/imgi_107_user87.webp",
-    company: "VoiceTech",
-    blurColor: "bg-cyan-500",
+    blurColor: "bg-emerald-500",
   },
   {
     id: 7,
     quote:
-      "The combination of design skills and AI engineering knowledge is rare. They built our AI assistant from concept to production in record time.",
-    author: "Nina Patel",
-    role: "CEO at Automation Platform",
+      "Como inversor en salud, he visto muchos productos. CORE es el primero que realmente personaliza a nivel dinamico. Impresionante.",
+    author: "Javier Ortiz",
+    role: "Managing Partner, VC Fund",
     avatar: "/images/imgi_108_user88.webp",
-    company: "AutoFlow",
-    blurColor: "bg-rose-500",
+    blurColor: "bg-green-500",
   },
 ]
 
@@ -92,7 +85,7 @@ export function Testimonials() {
         {/* Section Header */}
         <div className="mb-12 md:mb-16 max-w-[1280px]">
           <SectionTitle className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight">
-            What clients say
+            Lo que dicen nuestros usuarios
           </SectionTitle>
         </div>
 
@@ -108,9 +101,8 @@ export function Testimonials() {
             {duplicatedTestimonials.map((testimonial, index) => (
               <article
                 key={`${testimonial.id}-${index}`}
-                className="relative flex-shrink-0 w-[85vw] md:w-[400px] p-6 md:p-8 border bg-card hover:shadow-lg transition-shadow overflow-hidden border-zinc-100 md:px-6 md:py-6 rounded-3xl"
+                className="relative flex-shrink-0 w-[85vw] md:w-[400px] p-6 md:p-8 border bg-card hover:shadow-lg transition-shadow overflow-hidden border-border md:px-6 md:py-6 rounded-3xl"
               >
-                {/* Author Info */}
                 <div className="flex items-center gap-3 mb-4">
                   <Image
                     src={testimonial.avatar || "/placeholder.svg"}
@@ -120,16 +112,13 @@ export function Testimonials() {
                     className="rounded-full"
                   />
                   <div>
-                    <div className="font-semibold">{testimonial.author}</div>
+                    <div className="font-semibold text-foreground">{testimonial.author}</div>
                     <div className="text-sm text-muted-foreground">{testimonial.role}</div>
                   </div>
                 </div>
-
-                {/* Quote */}
-                <blockquote className="text-base leading-relaxed font-semibold text-zinc-950 relative z-10">
-                  "{testimonial.quote}"
+                <blockquote className="text-base leading-relaxed font-semibold text-foreground relative z-10">
+                  &ldquo;{testimonial.quote}&rdquo;
                 </blockquote>
-
                 <div
                   className={`absolute -bottom-12 -right-12 w-48 h-48 ${testimonial.blurColor} rounded-full opacity-10`}
                   style={{ filter: "blur(72px)" }}
@@ -151,9 +140,8 @@ export function Testimonials() {
             {duplicatedTestimonialsReverse.map((testimonial, index) => (
               <article
                 key={`reverse-${testimonial.id}-${index}`}
-                className="relative flex-shrink-0 w-[85vw] md:w-[400px] p-6 md:p-8 border bg-card hover:shadow-lg transition-shadow overflow-hidden border-zinc-100 md:px-6 md:py-6 rounded-3xl"
+                className="relative flex-shrink-0 w-[85vw] md:w-[400px] p-6 md:p-8 border bg-card hover:shadow-lg transition-shadow overflow-hidden border-border md:px-6 md:py-6 rounded-3xl"
               >
-                {/* Author Info */}
                 <div className="flex items-center gap-3 mb-4">
                   <Image
                     src={testimonial.avatar || "/placeholder.svg"}
@@ -163,16 +151,13 @@ export function Testimonials() {
                     className="rounded-full"
                   />
                   <div>
-                    <div className="font-semibold">{testimonial.author}</div>
+                    <div className="font-semibold text-foreground">{testimonial.author}</div>
                     <div className="text-sm text-muted-foreground">{testimonial.role}</div>
                   </div>
                 </div>
-
-                {/* Quote */}
-                <blockquote className="text-base leading-relaxed font-semibold text-zinc-950 relative z-10">
-                  "{testimonial.quote}"
+                <blockquote className="text-base leading-relaxed font-semibold text-foreground relative z-10">
+                  &ldquo;{testimonial.quote}&rdquo;
                 </blockquote>
-
                 <div
                   className={`absolute -bottom-12 -right-12 w-48 h-48 ${testimonial.blurColor} rounded-full opacity-10`}
                   style={{ filter: "blur(72px)" }}
@@ -183,14 +168,13 @@ export function Testimonials() {
         </div>
       </div>
 
+      {/* Mobile stacked cards */}
       <div className="lg:hidden max-w-[1280px] mx-auto px-6 md:px-12">
-        {/* Section Header */}
         <div className="mb-12 md:mb-16">
           <SectionTitle className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight">
-            What clients say
+            Lo que dicen nuestros usuarios
           </SectionTitle>
         </div>
-
         <div className="relative">
           {mobileTestimonials.map((testimonial, index) => (
             <div
@@ -201,8 +185,7 @@ export function Testimonials() {
                 zIndex: index + 1,
               }}
             >
-              <article className="relative p-6 md:p-8 border bg-card transition-shadow overflow-hidden border-zinc-100 rounded-3xl">
-                {/* Author Info */}
+              <article className="relative p-6 md:p-8 border bg-card transition-shadow overflow-hidden border-border rounded-3xl">
                 <div className="flex items-center gap-3 mb-4">
                   <Image
                     src={testimonial.avatar || "/placeholder.svg"}
@@ -212,16 +195,13 @@ export function Testimonials() {
                     className="rounded-full"
                   />
                   <div>
-                    <div className="font-semibold">{testimonial.author}</div>
+                    <div className="font-semibold text-foreground">{testimonial.author}</div>
                     <div className="text-sm text-muted-foreground">{testimonial.role}</div>
                   </div>
                 </div>
-
-                {/* Quote */}
-                <blockquote className="text-base leading-relaxed font-semibold text-zinc-950 relative z-10">
-                  "{testimonial.quote}"
+                <blockquote className="text-base leading-relaxed font-semibold text-foreground relative z-10">
+                  &ldquo;{testimonial.quote}&rdquo;
                 </blockquote>
-
                 <div
                   className={`absolute -bottom-12 -right-12 w-48 h-48 ${testimonial.blurColor} rounded-full opacity-10`}
                   style={{ filter: "blur(72px)" }}

@@ -1,12 +1,12 @@
 "use client"
 
-const clients = ["Google", "Stripe", "Airbnb", "Spotify", "Notion", "Figma", "Vercel", "Linear"]
+const clients = ["Apple Health", "Whoop", "Oura", "Google Fit", "Garmin", "Strava", "Calm", "Headspace"]
 
 export function ClientLogos() {
   return (
     <section className="py-16 border-border overflow-hidden md:py-10 border-t-[0]">
       <div className="max-w-[1280px] mx-auto px-6 md:px-12 mb-8">
-        <p className="text-sm text-muted-foreground text-center">Trusted by leading companies worldwide</p>
+        <p className="text-sm text-muted-foreground text-center">Compatible con las principales plataformas de salud</p>
       </div>
 
       {/* Marquee Container */}

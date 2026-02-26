@@ -11,20 +11,20 @@ const interTight = Inter_Tight({
 })
 
 export const metadata: Metadata = {
-  title: "Portfolio | Digital Product Designer",
-  description: "Independent digital product designer crafting thoughtful, pixel-perfect experiences for the web.",
-  keywords: ["design", "portfolio", "UI/UX", "product design", "digital design"],
-  authors: [{ name: "Portfolio" }],
+  title: "CORE | Biohacking as a Service",
+  description: "Rendimiento cognitivo dinamico. CORE conecta tus datos de sueno y carga laboral para decirte exactamente que nutrientes necesita tu cerebro cada manana.",
+  keywords: ["biohacking", "nootropicos", "rendimiento cognitivo", "suplementos", "high performance", "CORE"],
+  authors: [{ name: "CORE Performance" }],
   openGraph: {
-    title: "Portfolio | Digital Product Designer",
-    description: "Independent digital product designer crafting thoughtful, pixel-perfect experiences for the web.",
+    title: "CORE | Biohacking as a Service",
+    description: "Sincroniza tu biologia con tu agenda. Rendimiento cognitivo dinamico para High Performers.",
     type: "website",
   },
-    generator: 'v0.app'
+  generator: 'v0.app'
 }
 
 export const viewport: Viewport = {
-  themeColor: "#ffffff",
+  themeColor: "#faf9f6",
   width: "device-width",
   initialScale: 1,
 }
