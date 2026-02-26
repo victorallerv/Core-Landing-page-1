@@ -462,9 +462,31 @@
   }
 }
 
-/* Reduced motion: stop background SVG spin */
+/* Flow Breathe — slow rotation + biological pulse */
+@keyframes flow-breathe {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(90deg) scale(1.04);
+  }
+  50% {
+    transform: rotate(180deg) scale(1);
+  }
+  75% {
+    transform: rotate(270deg) scale(1.04);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+.animate-flow-breathe {
+  animation: flow-breathe 40s linear infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .animate-\[spin_40s_linear_infinite\] {
+  .animate-flow-breathe {
     animation: none;
   }
 }

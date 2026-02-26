@@ -43,61 +43,62 @@ export function Hero() {
 
   return (
     <section className="min-h-screen flex flex-col justify-center pt-20 relative overflow-hidden">
-      {/* Data & Biology SVG visualization */}
-      <div className="absolute -right-20 md:right-[-10%] top-20 md:top-10 w-[600px] h-[600px] md:w-[800px] md:h-[800px] pointer-events-none -z-10 animate-[spin_40s_linear_infinite]">
+      {/* Clarity aura glow */}
+      <div
+        className="absolute -right-10 md:right-[-5%] top-16 md:top-4 w-[550px] h-[550px] md:w-[750px] md:h-[750px] pointer-events-none -z-20 rounded-full blur-3xl opacity-[0.07]"
+        style={{
+          background: "radial-gradient(circle, #0F2E2F 0%, rgba(15,46,47,0.4) 40%, transparent 70%)",
+        }}
+      />
+
+      {/* Fluid data-wave SVG */}
+      <div className="absolute -right-10 md:right-[-5%] top-16 md:top-4 w-[550px] h-[550px] md:w-[750px] md:h-[750px] pointer-events-none -z-10 animate-flow-breathe">
         <svg
           viewBox="0 0 800 800"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           className="w-full h-full"
         >
-          <defs>
-            {/* Dot grid pattern */}
-            <pattern id="dotGrid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-              <circle cx="10" cy="10" r="1.2" fill="#0F2E2F" opacity="0.12" />
-            </pattern>
-            {/* Radial fade mask */}
-            <radialGradient id="fadeMask" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stopColor="white" stopOpacity="1" />
-              <stop offset="70%" stopColor="white" stopOpacity="0.6" />
-              <stop offset="100%" stopColor="white" stopOpacity="0" />
-            </radialGradient>
-            <mask id="circleFade">
-              <rect width="800" height="800" fill="url(#fadeMask)" />
-            </mask>
-          </defs>
-
-          {/* Main dot-filled circle */}
-          <circle cx="400" cy="400" r="340" fill="url(#dotGrid)" mask="url(#circleFade)" />
-
-          {/* Concentric sync rings */}
-          <circle cx="400" cy="400" r="340" stroke="#0F2E2F" strokeWidth="0.5" opacity="0.08" fill="none" />
-          <circle cx="400" cy="400" r="270" stroke="#0F2E2F" strokeWidth="0.5" opacity="0.10" fill="none" />
-          <circle cx="400" cy="400" r="200" stroke="#0F2E2F" strokeWidth="0.5" opacity="0.12" fill="none" />
-
-          {/* Subtle tick marks on outer ring */}
-          {Array.from({ length: 60 }).map((_, i) => {
-            const angle = (i * 6 * Math.PI) / 180
-            const isLong = i % 5 === 0
-            const r1 = isLong ? 320 : 330
-            const r2 = 340
-            const x1 = 400 + r1 * Math.cos(angle)
-            const y1 = 400 + r1 * Math.sin(angle)
-            const x2 = 400 + r2 * Math.cos(angle)
-            const y2 = 400 + r2 * Math.sin(angle)
-            return (
-              <line
-                key={i}
-                x1={x1}
-                y1={y1}
-                x2={x2}
-                y2={y2}
-                stroke="#0F2E2F"
-                strokeWidth={isLong ? "0.8" : "0.4"}
-                opacity={isLong ? "0.12" : "0.06"}
-              />
-            )
-          })}
+          {/* Wave 1 — wide alpha wave */}
+          <path
+            d="M 80 400 C 180 280, 320 520, 420 380 S 620 200, 720 400"
+            stroke="#0F2E2F"
+            strokeWidth="2.5"
+            strokeDasharray="4 14"
+            strokeLinecap="round"
+            opacity="0.18"
+            fill="none"
+          />
+          {/* Wave 2 — shifted theta rhythm */}
+          <path
+            d="M 60 450 C 200 340, 280 580, 400 430 S 560 260, 740 460"
+            stroke="#0F2E2F"
+            strokeWidth="2"
+            strokeDasharray="3 12"
+            strokeLinecap="round"
+            opacity="0.14"
+            fill="none"
+          />
+          {/* Wave 3 — deep delta undulation */}
+          <path
+            d="M 100 350 C 220 500, 350 240, 460 370 S 640 520, 700 340"
+            stroke="#0F2E2F"
+            strokeWidth="2"
+            strokeDasharray="5 16"
+            strokeLinecap="round"
+            opacity="0.12"
+            fill="none"
+          />
+          {/* Wave 4 — subtle upper harmonic */}
+          <path
+            d="M 120 300 C 240 420, 360 200, 480 320 S 620 440, 680 280"
+            stroke="#0F2E2F"
+            strokeWidth="1.5"
+            strokeDasharray="3 18"
+            strokeLinecap="round"
+            opacity="0.10"
+            fill="none"
+          />
         </svg>
       </div>
 
