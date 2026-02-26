@@ -85,8 +85,8 @@ export function Header() {
                 onClick={(e) => handleNavClick(e, "#contact")}
                 className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium rounded-full text-white transition-all hover:shadow-xl"
                 style={{
-                  backgroundColor: "#123524",
-                  boxShadow: "0 4px 20px rgba(18, 53, 36, 0.3)",
+                  backgroundColor: "#0d241b",
+                  boxShadow: "0 4px 20px rgba(13, 36, 27, 0.35)",
                 }}
               >
                 Solicitar Acceso
@@ -134,8 +134,8 @@ export function Header() {
                 }}
                 className="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium rounded-full text-white transition-all hover:shadow-xl"
                 style={{
-                  backgroundColor: "#123524",
-                  boxShadow: "0 4px 20px rgba(18, 53, 36, 0.3)",
+                  backgroundColor: "#0d241b",
+                  boxShadow: "0 4px 20px rgba(13, 36, 27, 0.35)",
                 }}
               >
                 Solicitar Acceso
