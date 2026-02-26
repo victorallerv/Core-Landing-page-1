@@ -45,14 +45,14 @@ export function Hero() {
     <section className="min-h-screen flex flex-col justify-center pt-20 relative overflow-hidden">
       {/* Clarity aura glow */}
       <div
-        className="absolute -right-10 md:right-[-5%] top-16 md:top-4 w-[550px] h-[550px] md:w-[750px] md:h-[750px] pointer-events-none -z-20 rounded-full blur-3xl opacity-[0.07]"
+        className="absolute -right-10 md:right-[-5%] top-16 md:top-4 w-[550px] h-[550px] md:w-[750px] md:h-[750px] pointer-events-none -z-20 rounded-full blur-3xl opacity-[0.08]"
         style={{
           background: "radial-gradient(circle, #0F2E2F 0%, rgba(15,46,47,0.4) 40%, transparent 70%)",
         }}
       />
 
       {/* Fluid data-wave SVG */}
-      <div className="absolute -right-10 md:right-[-5%] top-16 md:top-4 w-[550px] h-[550px] md:w-[750px] md:h-[750px] pointer-events-none -z-10 animate-flow-breathe">
+      <div className="absolute -right-10 md:right-[-5%] top-16 md:top-4 w-[550px] h-[550px] md:w-[750px] md:h-[750px] pointer-events-none -z-10">
         <svg
           viewBox="0 0 800 800"
           fill="none"
@@ -63,41 +63,45 @@ export function Hero() {
           <path
             d="M 80 400 C 180 280, 320 520, 420 380 S 620 200, 720 400"
             stroke="#0F2E2F"
-            strokeWidth="2.5"
-            strokeDasharray="4 14"
+            strokeWidth="3"
+            strokeDasharray="0 15"
             strokeLinecap="round"
-            opacity="0.18"
+            opacity="0.30"
             fill="none"
+            className="animate-traveling-dots wave-bob-1"
           />
           {/* Wave 2 — shifted theta rhythm */}
           <path
             d="M 60 450 C 200 340, 280 580, 400 430 S 560 260, 740 460"
             stroke="#0F2E2F"
-            strokeWidth="2"
-            strokeDasharray="3 12"
+            strokeWidth="2.5"
+            strokeDasharray="0 18"
             strokeLinecap="round"
-            opacity="0.14"
+            opacity="0.25"
             fill="none"
+            className="animate-traveling-dots-reverse wave-bob-2"
           />
           {/* Wave 3 — deep delta undulation */}
           <path
             d="M 100 350 C 220 500, 350 240, 460 370 S 640 520, 700 340"
             stroke="#0F2E2F"
-            strokeWidth="2"
-            strokeDasharray="5 16"
+            strokeWidth="2.5"
+            strokeDasharray="0 20"
             strokeLinecap="round"
-            opacity="0.12"
+            opacity="0.22"
             fill="none"
+            className="animate-traveling-dots wave-bob-3"
           />
           {/* Wave 4 — subtle upper harmonic */}
           <path
             d="M 120 300 C 240 420, 360 200, 480 320 S 620 440, 680 280"
             stroke="#0F2E2F"
-            strokeWidth="1.5"
-            strokeDasharray="3 18"
+            strokeWidth="2"
+            strokeDasharray="0 22"
             strokeLinecap="round"
-            opacity="0.10"
+            opacity="0.18"
             fill="none"
+            className="animate-traveling-dots-reverse wave-bob-4"
           />
         </svg>
       </div>
