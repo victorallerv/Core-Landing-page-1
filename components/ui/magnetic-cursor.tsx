@@ -54,8 +54,8 @@ export function MagneticCursor() {
     }
 
     const animate = () => {
-      // Smooth interpolation
-      const ease = 0.15
+      // Smooth interpolation — higher = more responsive
+      const ease = 0.45
       currentX += (targetX - currentX) * ease
       currentY += (targetY - currentY) * ease
 
