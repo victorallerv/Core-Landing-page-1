@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { useEffect, useState, useMemo } from "react"
+import { useEffect, useState } from "react"
 
 export function Hero() {
   const titleText = "Sincroniza tu biologia con tu agenda"
@@ -43,29 +43,62 @@ export function Hero() {
 
   return (
     <section className="min-h-screen flex flex-col justify-center pt-20 relative overflow-hidden">
-      {/* Flow Aura — pure CSS */}
-      <div className="absolute -right-32 md:-right-48 top-32 md:top-40 w-[500px] h-[500px] md:w-[750px] md:h-[750px] pointer-events-none animate-aura-rotate -z-10">
-        {/* Primary aura layer */}
-        <div
-          className="absolute inset-0 rounded-full opacity-30 blur-[120px]"
-          style={{
-            background: "conic-gradient(from 0deg, #0F2E2F 0%, transparent 15%, #1a4a3a 30%, transparent 45%, #0F2E2F 60%, transparent 75%, #1a4a3a 90%, #0F2E2F 100%)",
-          }}
-        />
-        {/* Secondary glow layer */}
-        <div
-          className="absolute inset-[15%] rounded-full opacity-40 blur-[100px]"
-          style={{
-            background: "radial-gradient(circle, rgba(15,46,47,0.5) 0%, rgba(26,74,58,0.3) 40%, transparent 70%)",
-          }}
-        />
-        {/* Inner bright core */}
-        <div
-          className="absolute inset-[30%] rounded-full opacity-25 blur-[80px]"
-          style={{
-            background: "radial-gradient(circle, rgba(57,192,78,0.15) 0%, rgba(15,46,47,0.2) 50%, transparent 80%)",
-          }}
-        />
+      {/* Data & Biology SVG visualization */}
+      <div className="absolute -right-20 md:right-[-10%] top-20 md:top-10 w-[600px] h-[600px] md:w-[800px] md:h-[800px] pointer-events-none -z-10 animate-[spin_40s_linear_infinite]">
+        <svg
+          viewBox="0 0 800 800"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-full h-full"
+        >
+          <defs>
+            {/* Dot grid pattern */}
+            <pattern id="dotGrid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+              <circle cx="10" cy="10" r="1.2" fill="#0F2E2F" opacity="0.12" />
+            </pattern>
+            {/* Radial fade mask */}
+            <radialGradient id="fadeMask" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stopColor="white" stopOpacity="1" />
+              <stop offset="70%" stopColor="white" stopOpacity="0.6" />
+              <stop offset="100%" stopColor="white" stopOpacity="0" />
+            </radialGradient>
+            <mask id="circleFade">
+              <rect width="800" height="800" fill="url(#fadeMask)" />
+            </mask>
+          </defs>
+
+          {/* Main dot-filled circle */}
+          <circle cx="400" cy="400" r="340" fill="url(#dotGrid)" mask="url(#circleFade)" />
+
+          {/* Concentric sync rings */}
+          <circle cx="400" cy="400" r="340" stroke="#0F2E2F" strokeWidth="0.5" opacity="0.08" fill="none" />
+          <circle cx="400" cy="400" r="270" stroke="#0F2E2F" strokeWidth="0.5" opacity="0.10" fill="none" />
+          <circle cx="400" cy="400" r="200" stroke="#0F2E2F" strokeWidth="0.5" opacity="0.12" fill="none" />
+
+          {/* Subtle tick marks on outer ring */}
+          {Array.from({ length: 60 }).map((_, i) => {
+            const angle = (i * 6 * Math.PI) / 180
+            const isLong = i % 5 === 0
+            const r1 = isLong ? 320 : 330
+            const r2 = 340
+            const x1 = 400 + r1 * Math.cos(angle)
+            const y1 = 400 + r1 * Math.sin(angle)
+            const x2 = 400 + r2 * Math.cos(angle)
+            const y2 = 400 + r2 * Math.sin(angle)
+            return (
+              <line
+                key={i}
+                x1={x1}
+                y1={y1}
+                x2={x2}
+                y2={y2}
+                stroke="#0F2E2F"
+                strokeWidth={isLong ? "0.8" : "0.4"}
+                opacity={isLong ? "0.12" : "0.06"}
+              />
+            )
+          })}
+        </svg>
       </div>
 
       <div className="max-w-[1280px] mx-auto px-6 md:px-12 py-20 md:py-32 md:pb-4 pb-4 pt-4 md:pt-32">
