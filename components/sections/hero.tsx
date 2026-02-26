@@ -51,57 +51,90 @@ export function Hero() {
         }}
       />
 
-      {/* Fluid data-wave SVG */}
-      <div className="absolute -right-10 md:right-[-5%] top-16 md:top-4 w-[550px] h-[550px] md:w-[750px] md:h-[750px] pointer-events-none -z-10">
+      {/* Fluid data-wave SVG — 7-layer oceanic flow */}
+      <div className="absolute -right-10 md:right-[-5%] top-16 md:top-4 w-[600px] h-[600px] md:w-[850px] md:h-[850px] pointer-events-none -z-10">
         <svg
-          viewBox="0 0 800 800"
+          viewBox="0 0 900 900"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="w-full h-full"
+          className="w-full h-full overflow-visible"
         >
-          {/* Wave 1 — wide alpha wave */}
+          {/* Wave 1 — deepest background, wide & gentle */}
           <path
-            d="M 80 400 C 180 280, 320 520, 420 380 S 620 200, 720 400"
+            d="M 40 480 C 160 340, 340 600, 450 460 S 680 280, 860 500"
+            stroke="#0F2E2F"
+            strokeWidth="3"
+            strokeDasharray="0 16"
+            strokeLinecap="round"
+            opacity="0.05"
+            fill="none"
+            className="wave-flow-1"
+          />
+          {/* Wave 2 — deep mid layer */}
+          <path
+            d="M 60 420 C 200 540, 320 300, 440 440 S 640 580, 840 400"
+            stroke="#0F2E2F"
+            strokeWidth="2.8"
+            strokeDasharray="0 18"
+            strokeLinecap="round"
+            opacity="0.08"
+            fill="none"
+            className="wave-flow-2"
+          />
+          {/* Wave 3 — mid layer, more amplitude */}
+          <path
+            d="M 80 380 C 180 260, 360 540, 460 360 S 660 200, 820 420"
             stroke="#0F2E2F"
             strokeWidth="3"
             strokeDasharray="0 15"
             strokeLinecap="round"
-            opacity="0.30"
+            opacity="0.12"
             fill="none"
-            className="animate-traveling-dots wave-bob-1"
+            className="wave-flow-3"
           />
-          {/* Wave 2 — shifted theta rhythm */}
+          {/* Wave 4 — core rhythm, prominent */}
           <path
-            d="M 60 450 C 200 340, 280 580, 400 430 S 560 260, 740 460"
+            d="M 50 450 C 200 320, 300 580, 420 420 S 600 260, 850 470"
+            stroke="#0F2E2F"
+            strokeWidth="3.2"
+            strokeDasharray="0 14"
+            strokeLinecap="round"
+            opacity="0.20"
+            fill="none"
+            className="wave-flow-4"
+          />
+          {/* Wave 5 — upper harmonic */}
+          <path
+            d="M 100 340 C 240 460, 380 220, 500 360 S 680 500, 800 320"
             stroke="#0F2E2F"
             strokeWidth="2.5"
             strokeDasharray="0 18"
             strokeLinecap="round"
             opacity="0.25"
             fill="none"
-            className="animate-traveling-dots-reverse wave-bob-2"
+            className="wave-flow-5"
           />
-          {/* Wave 3 — deep delta undulation */}
+          {/* Wave 6 — sharp foreground accent */}
           <path
-            d="M 100 350 C 220 500, 350 240, 460 370 S 640 520, 700 340"
+            d="M 70 520 C 220 400, 350 620, 480 490 S 650 340, 830 540"
             stroke="#0F2E2F"
             strokeWidth="2.5"
             strokeDasharray="0 20"
             strokeLinecap="round"
-            opacity="0.22"
+            opacity="0.15"
             fill="none"
-            className="animate-traveling-dots wave-bob-3"
+            className="wave-flow-6"
           />
-          {/* Wave 4 — subtle upper harmonic */}
+          {/* Wave 7 — topmost whisper layer */}
           <path
-            d="M 120 300 C 240 420, 360 200, 480 320 S 620 440, 680 280"
+            d="M 120 300 C 260 440, 400 200, 520 340 S 700 480, 780 290"
             stroke="#0F2E2F"
             strokeWidth="2"
             strokeDasharray="0 22"
             strokeLinecap="round"
-            opacity="0.18"
+            opacity="0.10"
             fill="none"
-            className="animate-traveling-dots-reverse wave-bob-4"
+            className="wave-flow-7"
           />
         </svg>
       </div>

@@ -463,68 +463,66 @@
 }
 
 /* Traveling dots — dots flow along the wave path */
-@keyframes traveling-dots {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  100% {
-    stroke-dashoffset: -150;
-  }
+@keyframes dots-flow {
+  0% { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: -160; }
 }
 
-@keyframes traveling-dots-reverse {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  100% {
-    stroke-dashoffset: 150;
-  }
+@keyframes dots-flow-reverse {
+  0% { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: 160; }
 }
 
-.animate-traveling-dots {
-  animation: traveling-dots 8s linear infinite;
-}
-
-.animate-traveling-dots-reverse {
-  animation: traveling-dots-reverse 10s linear infinite;
-}
-
-/* Wave bobbing — organic vertical float per wave */
+/* Oceanic bobbing — 18px vertical float */
 @keyframes wave-bob {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-6px);
-  }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-18px); }
 }
 
-.wave-bob-1 {
-  animation: traveling-dots 8s linear infinite, wave-bob 6s ease-in-out infinite;
+/* 7 wave layers: staggered delays + alternating dot direction */
+.wave-flow-1 {
+  animation: dots-flow 12s linear infinite, wave-bob 9s ease-in-out infinite;
+  animation-delay: 0s, 0s;
 }
 
-.wave-bob-2 {
-  animation: traveling-dots-reverse 10s linear infinite, wave-bob 7s ease-in-out infinite;
-  animation-delay: 0s, -1.5s;
+.wave-flow-2 {
+  animation: dots-flow-reverse 10s linear infinite, wave-bob 8s ease-in-out infinite;
+  animation-delay: 0s, -1.2s;
 }
 
-.wave-bob-3 {
-  animation: traveling-dots 9s linear infinite, wave-bob 8s ease-in-out infinite;
-  animation-delay: 0s, -3s;
+.wave-flow-3 {
+  animation: dots-flow 9s linear infinite, wave-bob 10s ease-in-out infinite;
+  animation-delay: 0s, -2.4s;
 }
 
-.wave-bob-4 {
-  animation: traveling-dots-reverse 11s linear infinite, wave-bob 9s ease-in-out infinite;
-  animation-delay: 0s, -4.5s;
+.wave-flow-4 {
+  animation: dots-flow-reverse 8s linear infinite, wave-bob 9s ease-in-out infinite;
+  animation-delay: 0s, -3.6s;
+}
+
+.wave-flow-5 {
+  animation: dots-flow 11s linear infinite, wave-bob 8s ease-in-out infinite;
+  animation-delay: 0s, -4.8s;
+}
+
+.wave-flow-6 {
+  animation: dots-flow-reverse 10s linear infinite, wave-bob 10s ease-in-out infinite;
+  animation-delay: 0s, -6s;
+}
+
+.wave-flow-7 {
+  animation: dots-flow 13s linear infinite, wave-bob 9s ease-in-out infinite;
+  animation-delay: 0s, -7.2s;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .animate-traveling-dots,
-  .animate-traveling-dots-reverse,
-  .wave-bob-1,
-  .wave-bob-2,
-  .wave-bob-3,
-  .wave-bob-4 {
+  .wave-flow-1,
+  .wave-flow-2,
+  .wave-flow-3,
+  .wave-flow-4,
+  .wave-flow-5,
+  .wave-flow-6,
+  .wave-flow-7 {
     animation: none;
   }
 }
