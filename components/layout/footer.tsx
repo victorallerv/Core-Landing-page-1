@@ -5,7 +5,7 @@ import Link from "next/link"
 export function Footer() {
   return (
     <footer
-      style={{ backgroundColor: "#0d241b" }}
+      style={{ backgroundColor: "#0F2E2F" }}
     >
       <div className="max-w-[1280px] mx-auto px-6 md:px-12 py-12 md:py-16">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
