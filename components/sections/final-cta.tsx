@@ -42,16 +42,16 @@ export function FinalCTA() {
                 type="submit"
                 className="px-8 py-4 text-base font-medium text-white rounded-full transition-all whitespace-nowrap"
                 style={{
-                  backgroundColor: "#39C04E",
-                  boxShadow: "0 4px 20px rgba(57, 192, 78, 0.3)",
+                  backgroundColor: "#123524",
+                  boxShadow: "0 4px 20px rgba(18, 53, 36, 0.3)",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.boxShadow = "0 8px 30px rgba(57, 192, 78, 0.5)"
-                  e.currentTarget.style.backgroundColor = "#2ea33f"
+                  e.currentTarget.style.boxShadow = "0 8px 30px rgba(18, 53, 36, 0.5)"
+                  e.currentTarget.style.backgroundColor = "#0d241b"
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.boxShadow = "0 4px 20px rgba(57, 192, 78, 0.3)"
-                  e.currentTarget.style.backgroundColor = "#39C04E"
+                  e.currentTarget.style.boxShadow = "0 4px 20px rgba(18, 53, 36, 0.3)"
+                  e.currentTarget.style.backgroundColor = "#123524"
                 }}
               >
                 Solicitar Acceso Beta
