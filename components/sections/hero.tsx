@@ -48,7 +48,7 @@ export function Hero() {
       {/* Spline 3D interactive background scene */}
       <div className="absolute inset-0 w-full h-full -z-10 opacity-65">
         <Suspense fallback={null}>
-          <Spline scene="https://prod.spline.design/CJzgJahSfcSPoFMo/scene.splinecode" />
+          <Spline scene="https://prod.spline.design/6NVvCyj4LKMeiYVF/scene.splinecode" />
         </Suspense>
       </div>
 
