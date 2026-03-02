@@ -45,10 +45,10 @@ export function Hero() {
 
   return (
     <section className="min-h-screen flex flex-col justify-center pt-20 relative overflow-hidden">
-      {/* Spline 3D background scene */}
-      <div className="absolute inset-0 w-full h-full -z-10 opacity-65 pointer-events-none">
+      {/* Spline 3D interactive background scene */}
+      <div className="absolute inset-0 w-full h-full -z-10 opacity-65">
         <Suspense fallback={null}>
-          <Spline scene="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode" />
+          <Spline scene="https://prod.spline.design/CJzgJahSfcSPoFMo/scene.splinecode" />
         </Suspense>
       </div>
 
