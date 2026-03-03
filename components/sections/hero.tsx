@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { useEffect, useState, lazy, Suspense } from "react"
+import { useEffect, useState, useRef, useCallback, lazy, Suspense } from "react"
 
 const Spline = lazy(() => import("@splinetool/react-spline"))
 
@@ -12,6 +12,20 @@ export function Hero() {
   const [isDesktop, setIsDesktop] = useState(false)
   const [email, setEmail] = useState("")
   const [submitted, setSubmitted] = useState(false)
+  const splineContainerRef = useRef<HTMLDivElement>(null)
+
+  // Block wheel events from reaching Spline to prevent zoom/shrink
+  useEffect(() => {
+    const container = splineContainerRef.current
+    if (!container) return
+    const blockWheel = (e: WheelEvent) => {
+      e.stopPropagation()
+    }
+    container.addEventListener("wheel", blockWheel, { passive: false, capture: true })
+    return () => {
+      container.removeEventListener("wheel", blockWheel, { capture: true } as EventListenerOptions)
+    }
+  }, [])
 
   useEffect(() => {
     const checkDesktop = () => {
@@ -119,8 +133,8 @@ export function Hero() {
 
           {/* Right column — Spline 3D (60%) */}
           <div
-            className="w-full lg:w-[60%] h-[400px] sm:h-[450px] lg:h-[600px] relative rounded-2xl overflow-hidden transition-transform duration-[3000ms] ease-out"
-            style={{ transform: "scale(1.2)" }}
+            ref={splineContainerRef}
+            className="w-full lg:w-[60%] h-[400px] sm:h-[450px] lg:h-[600px] relative rounded-2xl overflow-hidden"
           >
             <Suspense fallback={
               <div className="w-full h-full flex items-center justify-center">
