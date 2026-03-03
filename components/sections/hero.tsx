@@ -118,7 +118,10 @@ export function Hero() {
           </div>
 
           {/* Right column — Spline 3D (60%) */}
-          <div className="w-full lg:w-[60%] h-[400px] sm:h-[450px] lg:h-[600px] relative rounded-2xl overflow-hidden">
+          <div
+            className="w-full lg:w-[60%] h-[400px] sm:h-[450px] lg:h-[600px] relative rounded-2xl overflow-hidden transition-transform duration-[3000ms] ease-out"
+            style={{ transform: "scale(1.2)" }}
+          >
             <Suspense fallback={
               <div className="w-full h-full flex items-center justify-center">
                 <div className="w-8 h-8 border-2 border-[#0F2E2F]/20 border-t-[#0F2E2F] rounded-full animate-spin" />
