@@ -134,7 +134,7 @@ export function Hero() {
           {/* Right column — Spline 3D (60%) */}
           <div
             ref={splineContainerRef}
-            className="w-full lg:w-[60%] h-[400px] sm:h-[450px] lg:h-[600px] relative rounded-2xl overflow-hidden lg:-mt-12"
+            className="w-full lg:w-[60%] h-[400px] sm:h-[450px] lg:h-[600px] relative rounded-2xl overflow-hidden lg:-mt-20 lg:-mr-8"
           >
             <Suspense fallback={
               <div className="w-full h-full flex items-center justify-center">
