@@ -29,10 +29,10 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-20 md:py-32">
+    <section id="how-it-works" className="py-14 md:py-20">
       <div className="max-w-[1280px] mx-auto px-6 md:px-12">
         {/* Section Header */}
-        <div className="text-center mb-16 md:mb-20">
+        <div className="text-center mb-10 md:mb-14">
           <p className="text-sm text-muted-foreground uppercase tracking-wider mb-4">Proceso</p>
           <SectionTitle className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-balance">
             Como funciona

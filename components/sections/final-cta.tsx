@@ -14,7 +14,7 @@ export function FinalCTA() {
   }
 
   return (
-    <section id="contact" className="py-20 md:py-32">
+    <section id="contact" className="py-14 md:py-20">
       <div className="max-w-[1280px] mx-auto px-6 md:px-12">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-sm text-muted-foreground uppercase tracking-wider mb-6">Acceso anticipado</p>

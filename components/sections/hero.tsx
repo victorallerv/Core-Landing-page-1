@@ -58,8 +58,8 @@ export function Hero() {
   }
 
   return (
-    <section className="min-h-screen flex flex-col justify-center pt-20 relative overflow-hidden">
-      <div className="max-w-[1280px] mx-auto px-6 md:px-12 py-20 md:py-32 md:pb-8 pb-4 pt-4 md:pt-32 w-full">
+    <section className="min-h-screen flex flex-col justify-center pt-16 relative overflow-hidden">
+      <div className="max-w-[1280px] mx-auto px-6 md:px-12 py-12 md:py-20 md:pb-6 pb-4 pt-4 md:pt-20 w-full">
         {/* Two-column layout: text 40% left, 3D 60% right */}
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-0">
 
@@ -150,7 +150,7 @@ export function Hero() {
 
       {/* Bottom images with scroll reveal */}
       <div
-        className="relative w-full mt-8 max-w-[1280px] mx-auto px-6 md:px-12 transition-all duration-300 ease-out"
+        className="relative w-full mt-4 max-w-[1280px] mx-auto px-6 md:px-12 transition-all duration-300 ease-out"
         style={{ opacity: opacity }}
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

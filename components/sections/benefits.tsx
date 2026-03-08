@@ -23,7 +23,7 @@ const benefits = [
 
 export function Benefits() {
   return (
-    <section id="benefits" className="py-20 md:py-32">
+    <section id="benefits" className="py-14 md:py-20">
       <div className="max-w-[1280px] mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left Content */}
